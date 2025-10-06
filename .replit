@@ -1,0 +1,26 @@
+modules = ["java-graalvm22.3"]
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Arkanoid Game"
+
+[[workflows.workflow]]
+name = "Arkanoid Game"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd src && javac *.java && java Game"

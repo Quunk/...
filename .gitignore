@@ -1,0 +1,27 @@
+*.class
+*.jar
+*.war
+*.ear
+.DS_Store
+.idea/
+*.iml
+out/
+target/
+.replit
+replit.nix
+# IDE settings
+.idea/
+.local/
+.vscode/
+
+# Build output folders
+target/
+out/
+
+# Compiled files
+*.class
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
